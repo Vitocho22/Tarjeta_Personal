@@ -1,0 +1,126 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('img/fondo2.jpg'); /* Reemplaza con la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card.night-mode {
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card-title,
+.card-text {
+    transition: color 0.3s;
+}
+
+.card.night-mode .card-title,
+.card.night-mode .card-text {
+    color: #ffffff;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 0;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.contact-link img {
+    margin-right: 10px;
+}
+
+.wa-link:hover {
+    border-color: #25d366;
+    /* WhatsApp green */
+    box-shadow: 0 0 10px #25d366, 0 0 20px #25d366, 0 0 30px #25d366;
+    color: #25d366;
+}
+
+.email-link:hover {
+    border-color: #cb5c3d;
+    /* Email red */
+    box-shadow: 0 0 10px #cb5c3d, 0 0 20px #cb5c3d, 0 0 30px #cb5c3d;
+    color: #cb5c3d;
+}
+
+.tel-link:hover {
+    border-color: #4b67e3;
+    /* Telephone blue */
+    box-shadow: 0 0 10px #4b67e3, 0 0 20px #4b67e3, 0 0 30px #4b67e3;
+    color: #4b67e3;
+}
+
+.portfolio-link:hover {
+    border-color: #00b3ff;
+    /* Portfolio cyan */
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 30px #00b3ff;
+    color: #00b3ff;
+}
+
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.mode-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+.card.night-mode .mode-toggle {
+    color: #ffffff;
+}
+
+.neon-effect {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.neon-effect:hover {
+    box-shadow: 0 0 20px #00b3ff, 0 0 30px #00b3ff, 0 0 40px #00b3ff;
+    transform: scale(1.05);
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.icon-row img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-row img:hover {
+    transform: scale(1.2);
+}
+
+.card.night-mode .icon-row img:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
